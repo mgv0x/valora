@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade • Valora</title>
+  <meta name="description" content="Política de Privacidade oficial do aplicativo Valora. Conheça nosso compromisso com a privacidade por padrão, modelo offline-first e conformidade com a LGPD.">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .privacy-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    .privacy-hero {
+      background: linear-gradient(135deg, rgba(30, 63, 32, 0.05) 0%, rgba(88, 129, 87, 0.1) 100%);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .privacy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--forest-green-tint);
+      color: var(--forest-green);
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-bottom: 16px;
+    }
+
+    .privacy-title {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--forest-green);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .privacy-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .privacy-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .privacy-pill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .pill-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-xs);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .pill-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+      border-color: var(--sage-green-light);
+    }
+
+    .pill-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .pill-title {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--forest-green);
+      margin-bottom: 4px;
+    }
+
+    .pill-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .toc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-bottom: 36px;
+    }
+
+    .toc-title {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 10px 20px;
+    }
+
+    .toc-list a {
+      color: var(--sage-green);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition-fast);
+    }
+
+    .toc-list a:hover {
+      color: var(--forest-green);
+      text-decoration: underline;
+    }
+
+    .article-section {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-xs);
+    }
+
+    .article-section h2 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--forest-green);
+      margin-top: 0;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .article-section h3 {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+
+    .article-section p, .article-section li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-main);
+    }
+
+    .article-section ul, .article-section ol {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .article-section li {
+      margin-bottom: 8px;
+    }
+
+    .data-table-wrapper {
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .data-table th {
+      background: var(--bg-elevated);
+      color: var(--forest-green);
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .data-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      vertical-align: top;
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .data-table tr:hover td {
+      background: rgba(88, 129, 87, 0.04);
+    }
+
+    .callout-box {
+      background: rgba(88, 129, 87, 0.08);
+      border-left: 4px solid var(--sage-green);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+
+    .callout-box strong {
+      color: var(--forest-green);
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, var(--forest-green) 0%, #294D2C 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-top: 36px;
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      color: var(--forest-green);
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform var(--transition-fast), background var(--transition-fast);
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      background: #F4EFEA;
+    }
+
+    @media print {
+      .app-header, .toc-card, .contact-card, .btn-back, .theme-toggle-btn {
+        display: none !important;
+      }
+      .privacy-container {
+        padding: 0;
+        max-width: 100%;
+      }
+      .article-section {
+        border: none;
+        box-shadow: none;
+        padding: 16px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Bar -->
+  <header class="app-header">
+    <a href="index.html" class="brand-wrapper" style="text-decoration: none;">
+      <div class="brand-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <span class="brand-title">Valora</span>
+      <span class="brand-badge">OFICIAL</span>
+    </a>
+
+    <div class="header-actions">
+      <a href="index.html" class="btn-secondary" style="padding: 7px 14px; font-size: 12px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Voltar ao App</span>
+      </a>
+      <button class="icon-btn" onclick="window.print()" title="Imprimir ou Salvar em PDF">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Content Container -->
+  <main class="privacy-container">
+
+    <!-- Hero Banner -->
+    <div class="privacy-hero">
+      <div class="privacy-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Conformidade com LGPD (Lei nº 13.709/18) & GDPR
+      </div>
+      <h1 class="privacy-title">Política de Privacidade</h1>
+      <div class="privacy-meta">
+        <span><strong>Versão:</strong> 1.0 Oficial</span>
+        <span>•</span>
+        <span><strong>Última atualização:</strong> 22 de Novembro de 2026</span>
+        <span>•</span>
+        <span><strong>Abrangência:</strong> Valora Mobile (Android/iOS) e Valora Web</span>
+      </div>
+    </div>
+
+    <!-- Quick Highlights Cards -->
+    <div class="privacy-pill-grid">
+      <div class="pill-card">
+        <div class="pill-icon">🔒</div>
+        <div class="pill-title">Arquitetura Offline-First</div>
+        <div class="pill-desc">Seus alimentos, datas e notas ficam salvos no seu aparelho em banco SQLite local protegido.</div>
+      </div>
+      <div class="pill-card">
+        <div class="pill-icon">🚫</div>
+        <div class="pill-title">Zero Rastreamento</div>
+        <div class="pill-desc">Sem anúncios, sem telemetria invasiva e sem venda ou repasse dos seus dados para terceiros.</div>
+      </div>
+      <div class="pill-card">
+        <div class="pill-icon">📦</div>
+        <div class="pill-title">Portabilidade Total</div>
+        <div class="pill-desc">Exporte ou exclua seu inventário completo a qualquer momento em formato aberto JSON.</div>
+      </div>
+      <div class="pill-card">
+        <div class="pill-icon">🛡️</div>
+        <div class="pill-title">Respeito à LGPD</div>
+        <div class="pill-desc">Garantia integral dos direitos do titular dos dados previstos no artigo 18 da Lei Geral de Proteção de Dados.</div>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="toc-card" aria-label="Índice da Política de Privacidade">
+      <div class="toc-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        Índice de Navegação Rápida
+      </div>
+      <ul class="toc-list">
+        <li><a href="#sec-1">1. Princípios de Privacidade</a></li>
+        <li><a href="#sec-2">2. Dados Coletados e Tratamento</a></li>
+        <li><a href="#sec-3">3. Finalidades e Bases Legais</a></li>
+        <li><a href="#sec-4">4. Permissões no Dispositivo</a></li>
+        <li><a href="#sec-5">5. Compartilhamento Técnico</a></li>
+        <li><a href="#sec-6">6. Segurança e Armazenamento</a></li>
+        <li><a href="#sec-7">7. Retenção e Exclusão</a></li>
+        <li><a href="#sec-8">8. Direitos do Titular (LGPD)</a></li>
+        <li><a href="#sec-9">9. Menores de Idade</a></li>
+        <li><a href="#sec-10">10. Alterações desta Política</a></li>
+        <li><a href="#sec-11">11. Contato e Encarregado (DPO)</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECTION 1 -->
+    <section class="article-section" id="sec-1">
+      <h2><span>1.</span> Princípios Fundamentais de Privacidade</h2>
+      <p>O <strong>Valora</strong> foi construído em torno da convicção de que organizar a despensa e combater o desperdício alimentar não deve custar a sua privacidade. Operamos com base nas seguintes diretrizes essenciais:</p>
+      <ul>
+        <li><strong>Soberania Local:</strong> Seus dados pertencem a você. O aplicativo funciona plenamente de forma offline sem exigir registro em nuvem obrigatório.</li>
+        <li><strong>Transparência Absoluta:</strong> Deixamos claro quais dados são tratados, onde são salvos e como você pode extraí-los ou apagá-los.</li>
+        <li><strong>Sem Publicidade Direcionada:</strong> Não monetizamos a atenção dos usuários nem vendemos espaço para anunciantes dentro do aplicativo.</li>
+        <li><strong>Segurança por Padrão:</strong> Criptografia de ponta a ponta em conexões de rede e isolamento no sandbox do sistema operacional.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="article-section" id="sec-2">
+      <h2><span>2.</span> Dados Coletados e Formas de Tratamento</h2>
+      <p>Dividimos o tratamento de dados de forma transparente de acordo com a sua escolha de uso:</p>
+
+      <h3>2.1. Modo Padrão / Uso Local (Sem Nuvem)</h3>
+      <p>Ao utilizar o aplicativo offline ou sem login:</p>
+      <ul>
+        <li><strong>Informações de Alimentos:</strong> Nome, data de validade, quantidade, categoria (frutas, laticínios, despensa, etc.), local de armazenamento (geladeira, freezer, despensa), preço unitário informado e notas livres.</li>
+        <li><strong>Histórico de Consumo e Descarte:</strong> Ações registradas de consumo ou descarte com data e quantidade, utilizadas para o cálculo de métricas ecológicas e financeiras.</li>
+        <li><strong>Lista de Compras:</strong> Alimentos e itens adicionados à sua lista de compras.</li>
+        <li><strong>Preferências de Configuração:</strong> Idioma (Português, Inglês, Espanhol, etc.), tema (claro/escuro) e dias de antecedência para notificações.</li>
+      </ul>
+      <div class="callout-box">
+        <strong>Importante:</strong> Esses dados ficam armazenados exclusivamente na memória segura do seu próprio aparelho (SQLite <code>valora_inventory.db</code>). Não temos acesso remoto nem cópia desses dados.
+      </div>
+
+      <h3>2.2. Modo Conectado / Sincronização em Nuvem (Opcional)</h3>
+      <p>Caso você decida voluntariamente criar uma conta no Valora ou ativar a sincronização na nuvem:</p>
+      <ul>
+        <li><strong>Credenciais de Acesso:</strong> E-mail e identificador exclusivo de usuário gerado pelo Firebase Authentication.</li>
+        <li><strong>Perfil:</strong> Nome ou apelido de exibição informado por você.</li>
+        <li><strong>Backup em Nuvem:</strong> Cópia criptografada dos seus alimentos e histórico de atividades para restauração em múltiplos dispositivos.</li>
+      </ul>
+
+      <h3>2.3. Consultas à API Open Food Facts (Opcional)</h3>
+      <p>Quando você busca um alimento pelo catálogo mundial ou pelo código de barras, o aplicativo realiza uma requisição HTTPS para a base pública do Open Food Facts. Essa requisição transmite unicamente o texto da busca ou os números do código de barras; <em>nenhum dado pessoal, endereço IP persistente ou identificador de aparelho é vinculado à consulta</em>.</p>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="article-section" id="sec-3">
+      <h2><span>3.</span> Finalidades e Bases Legais do Tratamento</h2>
+      <p>O tratamento de dados pessoais no Valora é respaldado pelas bases legais da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/18) e do GDPR europeu:</p>
+
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Finalidade</th>
+              <th>Dados Utilizados</th>
+              <th>Base Legal (LGPD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Gerenciamento de despensa e cálculo de validades</strong></td>
+              <td>Nome do alimento, validade, quantidade, categoria</td>
+              <td>Execução de Contrato (Art. 7º, V)</td>
+            </tr>
+            <tr>
+              <td><strong>Lembretes de vencimento (Notificações)</strong></td>
+              <td>Horário e datas de vencimento de alimentos</td>
+              <td>Consentimento (Art. 7º, I) / Legítimo Interesse (Art. 7º, IX)</td>
+            </tr>
+            <tr>
+              <td><strong>Sincronização e Backup em Nuvem</strong></td>
+              <td>E-mail, UID, dados de despensa sincronizados</td>
+              <td>Execução de Contrato (Art. 7º, V)</td>
+            </tr>
+            <tr>
+              <td><strong>Exportação e Portabilidade</strong></td>
+              <td>Arquivo estruturado JSON de todo o inventário</td>
+              <td>Cumprimento de Obrigação Legal (Art. 7º, II) e Direitos do Titular (Art. 18, V)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="article-section" id="sec-4">
+      <h2><span>4.</span> Permissões Solicitadas no Dispositivo</h2>
+      <p>Para fornecer funcionalidades nativas, o Valora pode solicitar as seguintes permissões específicas:</p>
+      <ul>
+        <li><strong>Notificações Locais (<code>POST_NOTIFICATIONS</code>):</strong> Solicitada para alertar você no dia do vencimento de alimentos ou dias antes. As notificações são disparadas localmente pelo relógio do aparelho, sem envio para servidores de terceiros.</li>
+        <li><strong>Armazenamento / Seletor de Arquivos:</strong> Solicitada exclusivamente quando você clica em "Exportar Dados (JSON)" ou "Importar Dados (JSON)" para salvar ou restaurar seu backup.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="article-section" id="sec-5">
+      <h2><span>5.</span> Compartilhamento Técnico de Dados</h2>
+      <p>O Valora <strong>nunca comercializa dados</strong>. Os únicos serviços terceiros envolvidos possuem finalidade estritamente técnica:</p>
+      <ul>
+        <li><strong>Google Firebase (Google LLC):</strong> Utilizado para autenticação segura e backup em nuvem quando ativado pelo usuário. Certificações ISO 27001 e SOC 2.</li>
+        <li><strong>Open Food Facts:</strong> Base de dados aberta sem fins lucrativos utilizada para consulta de fichas nutricionais e códigos de barras.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="article-section" id="sec-6">
+      <h2><span>6.</span> Segurança e Armazenamento dos Dados</h2>
+      <p>Adotamos medidas rigorosas de proteção técnica e organizacional:</p>
+      <ul>
+        <li><strong>Isolamento (Sandbox):</strong> O banco de dados SQLite local reside em partição segura isolada do sistema operacional.</li>
+        <li><strong>Comunicação Criptografada:</strong> 100% do tráfego externo ocorre por meio de túneis cifrados TLS 1.3 / HTTPS.</li>
+        <li><strong>Proteção contra Injeção de Código (SQLi):</strong> Todas as consultas ao banco utilizam parâmetros vinculados e sanitização rigorosa.</li>
+        <li><strong>Integridade & Diagnósticos:</strong> Ferramentas integradas para otimização (<code>VACUUM</code>/<code>ANALYZE</code>) e verificação de saúde do banco de dados.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section class="article-section" id="sec-7">
+      <h2><span>7.</span> Retenção e Exclusão de Dados</h2>
+      <p>Você tem controle total sobre o tempo de armazenamento:</p>
+      <ul>
+        <li><strong>Dados Locais:</strong> Permanecem no seu aparelho até que você os exclua pelo app (via "Limpar Todos os Alimentos") ou desinstale o aplicativo.</li>
+        <li><strong>Exclusão de Conta e Dados Remotos:</strong> Você pode solicitar o encerramento da conta e eliminação irreversível de backups nos servidores a qualquer momento pelo menu de configurações ou via e-mail.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 8 -->
+    <section class="article-section" id="sec-8">
+      <h2><span>8.</span> Direitos do Titular de Dados (LGPD Artigo 18)</h2>
+      <p>Você pode exercer todos os seus direitos garantidos pela legislação brasileira a qualquer momento:</p>
+      <ol>
+        <li><strong>Acesso e Confirmação:</strong> Saber quais dados estão sob tratamento.</li>
+        <li><strong>Correção:</strong> Editar alimentos, categorias e dados cadastrais diretamente no aplicativo.</li>
+        <li><strong>Portabilidade dos Dados:</strong> Baixar um arquivo JSON completo com todo o seu histórico em formato aberto através da opção "Exportar Dados".</li>
+        <li><strong>Eliminação e Revogação:</strong> Apagar todos os registros com 1 clique ou revogar autorizações de notificação e sincronização.</li>
+      </ol>
+    </section>
+
+    <!-- SECTION 9 -->
+    <section class="article-section" id="sec-9">
+      <h2><span>9.</span> Privacidade de Crianças e Menores</h2>
+      <p>O aplicativo não é direcionado a crianças menores de 13 anos e não coleta intencionalmente dados pessoais desse público. Caso identifiquemos qualquer cadastro involuntário de menor sem autorização parental comprovada, procederemos com a exclusão imediata.</p>
+    </section>
+
+    <!-- SECTION 10 -->
+    <section class="article-section" id="sec-10">
+      <h2><span>10.</span> Alterações desta Política</h2>
+      <p>Esta Política de Privacidade poderá ser atualizada para refletir novas funcionalidades do aplicativo ou alterações regulatórias. Notificaremos os usuários por meio de aviso no aplicativo antes que modificações significativas entrem em vigor.</p>
+    </section>
+
+    <!-- SECTION 11: CONTACT -->
+    <section class="article-section" id="sec-11">
+      <h2><span>11.</span> Encarregado de Proteção de Dados (DPO) e Contato</h2>
+      <p>Para dúvidas, sugestões, solicitações de exclusão de dados ou esclarecimentos sobre privacidade, nossa equipe está à disposição:</p>
+      
+      <div class="contact-card">
+        <h3>Canal Oficial de Privacidade</h3>
+        <p>Atendimento direto aos titulares de dados e solicitações de conformidade com a LGPD e GDPR.</p>
+        <a href="mailto:privacidade@valora.app" class="contact-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          privacidade@valora.app
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="text-align: center; padding: 24px 20px; font-size: 12px; color: var(--text-light); border-top: 1px solid var(--border-subtle);">
+    Valora App • Menos desperdício. Mais valor.<br>
+    Copyright &copy; 2026 Valora. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

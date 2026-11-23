@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><title>Valora</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#113625", "on-tertiary": "#ffffff", "surface-dim": "#d8dbd5", "on-secondary-fixed-variant": "#374c34", "on-primary": "#ffffff", "on-primary-fixed-variant": "#2a4e3b", "inverse-surface": "#2d312d", "surface-container": "#ecefe8", "tertiary-container": "#424927", "tertiary": "#2c3212", "inverse-on-surface": "#eff2eb", "surface-container-lowest": "#ffffff", "surface": "#f7faf4", "on-secondary-fixed": "#0c200b", "surface-variant": "#e0e3dd", "outline": "#727973", "on-surface-variant": "#414843", "on-surface": "#191d19", "primary-container": "#294d3a", "surface-container-low": "#f2f5ee", "error": "#ba1a1a", "error-container": "#ffdad6", "on-primary-container": "#96bda5", "inverse-primary": "#a8d0b7", "primary-fixed-dim": "#a8d0b7", "on-error-container": "#93000a", "on-primary-fixed": "#002112", "on-secondary": "#ffffff", "secondary-fixed-dim": "#b5cdae", "tertiary-fixed-dim": "#c3cb9e", "on-tertiary-container": "#b0b88c", "on-error": "#ffffff", "on-secondary-container": "#546a50", "primary-fixed": "#c3ecd2", "on-tertiary-fixed": "#181e02", "on-background": "#191d19", "background": "#f7faf4", "outline-variant": "#c1c8c1", "surface-container-high": "#e6e9e3", "on-tertiary-fixed-variant": "#434a28", "secondary": "#4e644a", "surface-bright": "#f7faf4", "secondary-fixed": "#d0eac9", "tertiary-fixed": "#dfe7b8", "surface-container-highest": "#e0e3dd", "surface-tint": "#426652", "secondary-container": "#d0eac9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-md": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.4375rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["1.0625rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen pt-safe pb-safe"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full relative">
+<!-- Top Navigation & Action -->
+<div class="px-margin pt-4 pb-2 flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px] leading-none" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span class="font-label-sm text-caption uppercase tracking-wider">7 Dias Grátis de Teste</span>
+</div>
+<button aria-label="Fechar" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="px-margin flex flex-col gap-6 pb-12">
+<!-- Brand & Hero Title -->
+<div class="flex flex-col items-center text-center pt-2">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">Valora</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed font-label-sm text-caption uppercase tracking-widest">Premium</span>
+</div>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight max-w-[320px] mb-2">
+        Transforme sua rotina com o Valora Premium
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[320px]">
+        Economize até R$ 350 por mês evitando desperdícios e tenha controle inteligente total da sua despensa.
+      </p>
+</div>
+<!-- Editorial Visual Delight -->
+<div class="w-full relative rounded-2xl overflow-hidden shadow-sm bg-surface-container-low">
+<img class="w-full h-36 object-cover" data-alt="A tranquil, minimalist kitchen pantry aesthetic featuring textured ceramic jars, fresh herbs in a subtle stoneware pot, and organized linen cloth on warm natural oak wood. Soft daylight pouring from the side, clean Nordic composition, muted sage green and warm cream palette, peaceful mindfulness atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq2dR1eUdwvkqJ69UXRFI7yT2tXUGfr54etoAm-fympqwFyCMvpi228qkmaBWfFnTfEH8qTS2EuXsjAipPWeBvhheFCepaJbqIbcgW3y-LdOk4s8iybxYV9xzFM0EaO9rrm9bH5rBKWh5x7B4-KehTvfZ0N3P6qtSJh7Z30KoOacs_qWZ44PWcuBNPywG_PjeH1sFJdBHc-gKEZtw_ZOYRE9NFWuoHoRxgAMthicK44M57Vx6YtyNsNg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex items-end p-4">
+<div class="flex items-center gap-2 text-on-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">Mais de 14.000 famílias vivendo com desperdício zero</span>
+</div>
+</div>
+</div>
+<!-- Exclusivos / Value Stack -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-caption uppercase text-on-surface-variant tracking-wider">Recursos Exclusivos</span>
+<span class="font-caption text-caption text-secondary">Tudo incluso</span>
+</div>
+<!-- Benefit 1 -->
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-body-lg text-on-surface font-semibold truncate">Lembretes Inteligentes Antecipados</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Notificações preditivas e personalizadas no horário exato para nunca perder um alimento.</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">restaurant_menu</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-body-lg text-on-surface font-semibold truncate">Sugestões de Refeições com Alimentos que Vencem</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Receitas práticas e saborosas combinando o que já está na sua geladeira.</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-body-lg text-on-surface font-semibold truncate">Compartilhamento Familiar em Tempo Real</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Até 4 pessoas cuidando da mesma despensa sincronizada e organizada.</p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">insights</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-body-lg text-on-surface font-semibold truncate">Relatórios de Economia &amp; Carbono</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Métricas aprofundadas do dinheiro poupado e do impacto positivo mês a mês.</p>
+</div>
+</div>
+<!-- Benefit 5 -->
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">document_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-body-lg text-on-surface font-semibold truncate">Despensa Ilimitada &amp; Leitura de Notas</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cadastro ágil por foto de cupom fiscal com categorização automática instantânea.</p>
+</div>
+</div>
+</div>
+<!-- Pricing Card & Transparent Timeline -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-5 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-caption text-secondary font-semibold uppercase tracking-wider">Acesso Ilimitado</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-0.5">Plano Mensal Flexível</h3>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-caption font-semibold">
+          7 dias grátis
+        </div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-baseline justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Após o período de teste</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-display-lg text-display-lg text-primary tracking-tight font-bold">R$ 9,90</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ mês</span>
+</div>
+</div>
+<span class="font-label-sm text-caption text-secondary bg-surface-container px-2 py-1 rounded-md">Cancele quando quiser</span>
+</div>
+<!-- Timeline Component -->
+<div class="flex flex-col gap-3.5 pt-1">
+<span class="font-label-sm text-caption uppercase text-on-surface-variant tracking-wider">Como funciona seu teste:</span>
+<div class="relative pl-6 flex flex-col gap-4">
+<!-- Continuous Timeline Rail -->
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-surface-variant"></div>
+<!-- Step 1 -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<p class="font-headline-sm text-label-md text-on-surface font-semibold">Hoje: Acesso imediato gratuito</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Explore todas as funções premium sem pagar nada agora (R$ 0,00).</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[13px]">notifications</span>
+</div>
+<div>
+<p class="font-headline-sm text-label-md text-on-surface font-semibold">Em 5 dias: Lembrete amigável</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Avisaremos com antecedência antes de qualquer renovação.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-3">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[13px]">autorenew</span>
+</div>
+<div>
+<p class="font-headline-sm text-label-md text-on-surface font-semibold">Em 7 dias: Cobrança de R$ 9,90/mês</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cobrança automática somente se decidir continuar. Cancele com um toque.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA & Assurance -->
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 rounded-xl bg-primary-container text-on-primary flex flex-col items-center justify-center shadow-sm active:scale-[0.98] transition-all" type="button">
+<span class="font-headline-sm text-label-md font-semibold tracking-wide">Começar meus 7 dias grátis</span>
+<span class="font-caption text-caption text-on-primary-container">Depois apenas R$ 9,90 por mês</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span class="font-label-sm text-caption">Cobrança segura · Cancele a qualquer momento sem taxas</span>
+</div>
+</div>
+<!-- Footer Disclaimers & Legal Links -->
+<div class="flex flex-col items-center gap-2 pt-2 text-center">
+<div class="flex items-center gap-3">
+<button class="font-label-sm text-caption text-secondary hover:underline" type="button">Restaurar compras</button>
+<span class="text-surface-variant">•</span>
+<button class="font-label-sm text-caption text-secondary hover:underline" type="button">Termos de Uso</button>
+<span class="text-surface-variant">•</span>
+<button class="font-label-sm text-caption text-secondary hover:underline" type="button">Política de Privacidade</button>
+</div>
+<p class="font-caption text-caption text-on-surface-variant max-w-[300px]">
+        O cancelamento pode ser feito facilmente através das configurações da sua conta Apple ID ou Google Play antes do término do período de teste.
+      </p>
+</div>
+</div>
+</div></main>
+</body></html>

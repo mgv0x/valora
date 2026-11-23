@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Valora</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#113625", "on-tertiary": "#ffffff", "surface-dim": "#d8dbd5", "on-secondary-fixed-variant": "#374c34", "on-primary": "#ffffff", "on-primary-fixed-variant": "#2a4e3b", "inverse-surface": "#2d312d", "surface-container": "#ecefe8", "tertiary-container": "#424927", "tertiary": "#2c3212", "inverse-on-surface": "#eff2eb", "surface-container-lowest": "#ffffff", "surface": "#f7faf4", "on-secondary-fixed": "#0c200b", "surface-variant": "#e0e3dd", "outline": "#727973", "on-surface-variant": "#414843", "on-surface": "#191d19", "primary-container": "#294d3a", "surface-container-low": "#f2f5ee", "error": "#ba1a1a", "error-container": "#ffdad6", "on-primary-container": "#96bda5", "inverse-primary": "#a8d0b7", "primary-fixed-dim": "#a8d0b7", "on-error-container": "#93000a", "on-primary-fixed": "#002112", "on-secondary": "#ffffff", "secondary-fixed-dim": "#b5cdae", "tertiary-fixed-dim": "#c3cb9e", "on-tertiary-container": "#b0b88c", "on-error": "#ffffff", "on-secondary-container": "#546a50", "primary-fixed": "#c3ecd2", "on-tertiary-fixed": "#181e02", "on-background": "#191d19", "background": "#f7faf4", "outline-variant": "#c1c8c1", "surface-container-high": "#e6e9e3", "on-tertiary-fixed-variant": "#434a28", "secondary": "#4e644a", "surface-bright": "#f7faf4", "secondary-fixed": "#d0eac9", "tertiary-fixed": "#dfe7b8", "surface-container-highest": "#e0e3dd", "surface-tint": "#426652", "secondary-container": "#d0eac9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-md": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.4375rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["1.0625rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><svg class="w-6 h-6 shrink-0" fill="none" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><path d="M18 30.2C18 20.7 25.7 13 35.2 13c7 0 13.3 4.2 16 10.7L64 54.5 51.8 77.9 27.6 43.4A22.8 22.8 0 0 1 18 30.2Z" fill="#91A98B"></path><path d="M102 30.2C102 20.7 94.3 13 84.8 13c-7 0-13.3 4.2-16 10.7L56 54.5l12.2 23.4 24.2-34.5a22.8 22.8 0 0 0 9.6-13.2Z" fill="#294D3A"></path><path d="M51.8 77.9 60 90.5l8.2-12.6L60 62.2l-8.2 15.7Z" fill="#294D3A"></path><path d="M34.8 75.4a4.5 4.5 0 0 1 6.3-.9L60 88.7l18.9-14.2a4.5 4.5 0 0 1 5.4 7.2l-21.6 16.2a4.5 4.5 0 0 1-5.4 0L35.7 81.7a4.5 4.5 0 0 1-.9-6.3Z" fill="#91A98B"></path></svg><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Valora</span><span class="text-outline-variant font-body-sm text-body-sm mx-space-xs">/</span><h1 class="font-label-md text-label-md text-on-surface-variant font-medium">Despensa</h1></div><button aria-label="Perfil do usuário" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjgcHmhmo08MLh7U7-dlh_-souE9lF8rd0VzUeXuAKB0-q1YuA40S9xp1tLsJpIF2xhY4yNCrINLmGfeFCf3RgHuu2akqYGx9veEVbiIR744b8kVqq3M8O68x82Sf30NLx8RkAARNlyJKXvvXbV1O6DT4mK8iZd6EEuWQm9XhvBtu5odUFmOulwFVhQAfIzM3WvffcgNOjL_8S5VlY_uNYilZ55EhMZXVtinznVcySDEWysBjQFY0cvQ"/></button></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-8 pt-2">
+<!-- Subtle Header Introduction -->
+<header class="flex flex-col gap-1 mb- space-lg">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Meu Impacto</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Pequenas escolhas que fazem bem para sua casa e para o planeta.</p>
+</header>
+<!-- Interactive Period Pills Filter -->
+<div class="flex items-center p-1 bg-surface-container rounded-full mb-space-lg" role="tablist">
+<button aria-selected="true" class="period-pill flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-sm" role="tab" type="button">
+      Este mês
+    </button>
+<button aria-selected="false" class="period-pill flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-primary" role="tab" type="button">
+      Últimos 3 meses
+    </button>
+<button aria-selected="false" class="period-pill flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-primary" role="tab" type="button">
+      Todo o ano
+    </button>
+</div>
+<!-- Hero Highlight Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-4 mb-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption uppercase tracking-wider text-outline mb-1">Taxa de consumo consciente</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary leading-none">94%</span>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+            +6%
+          </span>
+</div>
+<p class="font-label-md text-label-md text-on-surface mt-1">Alimentos aproveitados com sucesso</p>
+</div>
+<!-- Compact Circular Visual Spark -->
+<div class="relative w-14 h-14 shrink-0 flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90 transform" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined text-primary text-[20px] absolute">task_alt</span>
+</div>
+</div>
+<!-- Gentle Insight Box -->
+<div class="bg-surface-container-low rounded-lg p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">favorite</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Você evitou que <span class="font-semibold text-primary">18 alimentos</span> fossem esquecidos no fundo da geladeira neste mês.
+      </p>
+</div>
+</section>
+<!-- Two Column Metric Tiles -->
+<section class="grid grid-cols-2 gap-space-md mb-space-md">
+<!-- Financial Savings -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="w-8 h-8 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">savings</span>
+</span>
+<span class="font-caption text-caption text-secondary font-medium">Economia</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary tracking-tight">R$ 214</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Economia estimada</p>
+</div>
+<p class="font-caption text-caption text-outline mt-2 leading-tight">
+        Evitando recompras e itens duplicados.
+      </p>
+</div>
+<!-- Food Weight Saved -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="w-8 h-8 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</span>
+<span class="font-caption text-caption text-secondary font-medium">Nutrição</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary tracking-tight">14,2 kg</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Comida aproveitada</p>
+</div>
+<p class="font-caption text-caption text-outline mt-2 leading-tight">
+        Equivalente a 32 refeições bem cuidadas.
+      </p>
+</div>
+</section>
+<!-- Weekly Progress Bar Chart Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-4 mb-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Consistência Semanal</h3>
+<p class="font-caption text-caption text-on-surface-variant">Taxa de alimentos consumidos no prazo</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold px-2 py-0.5 rounded bg-surface-container">
+        4 Semanas
+      </span>
+</div>
+<!-- SVG Responsive Bar Graphic -->
+<div class="w-full flex flex-col gap-2 pt-2">
+<div class="flex items-end justify-between h-28 px-2 gap-4">
+<!-- Sem 1 -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-caption text-caption text-outline">88%</span>
+<div class="w-full max-w-[2.25rem] bg-surface-variant rounded-t-lg transition-all group-hover:bg-secondary" style="height: 70%;"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Sem 1</span>
+</div>
+<!-- Sem 2 -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-caption text-caption text-outline">90%</span>
+<div class="w-full max-w-[2.25rem] bg-surface-variant rounded-t-lg transition-all group-hover:bg-secondary" style="height: 76%;"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Sem 2</span>
+</div>
+<!-- Sem 3 -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-caption text-caption text-outline">92%</span>
+<div class="w-full max-w-[2.25rem] bg-secondary-fixed-dim rounded-t-lg transition-all group-hover:bg-secondary" style="height: 82%;"></div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Sem 3</span>
+</div>
+<!-- Sem 4 -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-caption text-caption font-semibold text-primary">94%</span>
+<div class="w-full max-w-[2.25rem] bg-primary-container rounded-t-lg shadow-sm" style="height: 90%;"></div>
+<span class="font-caption text-caption font-semibold text-primary mt-1">Sem 4</span>
+</div>
+</div>
+<div class="h-0.5 w-full bg-surface-container rounded-full"></div>
+</div>
+</section>
+<!-- Mindful Achievements (Badges) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-3 mb-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Conquistas Conscientes</h3>
+<span class="font-caption text-caption text-secondary font-medium">2 ativas</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Badge 1 -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-md text-label-md text-primary font-semibold truncate">Guardião da Despensa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Completou 30 dias de acompanhamento contínuo</p>
+</div>
+</div>
+<!-- Badge 2 -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-md text-label-md text-primary font-semibold truncate">Zero Perda em Hortifrúti</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">2 semanas consecutivas sem desperdício de verduras</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Heartfelt Reflection Card with Warm Imagery Accent -->
+<section class="relative overflow-hidden bg-primary text-on-primary rounded-xl p-space-lg shadow-md flex flex-col gap-3">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary-container rounded-full opacity-40 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">spa</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed font-semibold">Reflexão do Mês</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary/95 leading-relaxed">
+      Cada refeição aproveitada economiza água, energia e o seu dinheiro. Parabéns pela dedicação e pelo cuidado diário com o seu lar!
+    </p>
+<!-- Warm Organic Mini Imagery -->
+<div class="pt-1 flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg overflow-hidden shrink-0 shadow-sm bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Warm domestic still life of fresh farmers market herbs, sourdough bread, and ceramic bowls on a sunlit wooden kitchen table, cozy scandinavian aesthetic, organic textures in sage and warm cream tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJDzUOvQ_eh2lvlhM7Pw0W7M0qweB4JFKK2OVI5cxgm-biEI9wX07G0wIKRBt8ig9ArW8MUEA8hTqn6O4XA55gZewk4O_gyaqBmfWz0cPmqRfcnEM06r6w5mbYy3LtZ6WwoMspjT5kpX8OtM10S0yhBfFAoSavqIWh1SGsti_MSINGKrViuulfOgKHelJyqAxMLDzYGFuhAIwzUahBBBQFj2OYeaUnJuKjHkLfJc45jyBgZb2PPVVkgw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary-fixed">Valora Comunidade</span>
+<span class="font-caption text-caption text-on-primary-container">Juntos por um consumo gentil</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function () {
+    // Interactive Tab Switching for Period Selection
+    const pills = document.querySelectorAll('.period-pill');
+    pills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        pills.forEach((p) => {
+          p.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          p.classList.add('text-on-surface-variant');
+          p.setAttribute('aria-selected', 'false');
+        });
+        pill.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        pill.classList.remove('text-on-surface-variant');
+        pill.setAttribute('aria-selected', 'true');
+      });
+    });
+
+    // Update Bottom Navigation Active State to 'Meu impacto'
+    const navItems = document.querySelectorAll('nav a[data-path]');
+    navItems.forEach((item) => {
+      const isImpact = item.getAttribute('data-path') === 'meu-impacto';
+      if (isImpact) {
+        item.classList.add('text-primary-container', 'font-semibold');
+        item.classList.remove('text-on-surface-variant');
+        const icon = item.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      } else {
+        item.classList.remove('text-primary-container', 'font-semibold');
+        item.classList.add('text-on-surface-variant');
+        const icon = item.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+        }
+      }
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_0_rgba(41,45,41,0.04)] pb-safe" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-caption text-caption">Início</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="despensa" href="#"><span class="material-symbols-outlined text-[22px]">kitchen</span><span class="font-caption text-caption">Despensa</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="validades" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span class="font-caption text-caption">Validades</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="meu-impacto" href="#"><span class="material-symbols-outlined text-[22px]">eco</span><span class="font-caption text-caption">Meu impacto</span></a></div></nav>
+</body></html>

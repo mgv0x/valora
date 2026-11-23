@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Valora</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#113625", "on-tertiary": "#ffffff", "surface-dim": "#d8dbd5", "on-secondary-fixed-variant": "#374c34", "on-primary": "#ffffff", "on-primary-fixed-variant": "#2a4e3b", "inverse-surface": "#2d312d", "surface-container": "#ecefe8", "tertiary-container": "#424927", "tertiary": "#2c3212", "inverse-on-surface": "#eff2eb", "surface-container-lowest": "#ffffff", "surface": "#f7faf4", "on-secondary-fixed": "#0c200b", "surface-variant": "#e0e3dd", "outline": "#727973", "on-surface-variant": "#414843", "on-surface": "#191d19", "primary-container": "#294d3a", "surface-container-low": "#f2f5ee", "error": "#ba1a1a", "error-container": "#ffdad6", "on-primary-container": "#96bda5", "inverse-primary": "#a8d0b7", "primary-fixed-dim": "#a8d0b7", "on-error-container": "#93000a", "on-primary-fixed": "#002112", "on-secondary": "#ffffff", "secondary-fixed-dim": "#b5cdae", "tertiary-fixed-dim": "#c3cb9e", "on-tertiary-container": "#b0b88c", "on-error": "#ffffff", "on-secondary-container": "#546a50", "primary-fixed": "#c3ecd2", "on-tertiary-fixed": "#181e02", "on-background": "#191d19", "background": "#f7faf4", "outline-variant": "#c1c8c1", "surface-container-high": "#e6e9e3", "on-tertiary-fixed-variant": "#434a28", "secondary": "#4e644a", "surface-bright": "#f7faf4", "secondary-fixed": "#d0eac9", "tertiary-fixed": "#dfe7b8", "surface-container-highest": "#e0e3dd", "surface-tint": "#426652", "secondary-container": "#d0eac9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-md": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.4375rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["1.0625rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><svg class="w-6 h-6 shrink-0" fill="none" viewbox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><path d="M18 30.2C18 20.7 25.7 13 35.2 13c7 0 13.3 4.2 16 10.7L64 54.5 51.8 77.9 27.6 43.4A22.8 22.8 0 0 1 18 30.2Z" fill="#91A98B"></path><path d="M102 30.2C102 20.7 94.3 13 84.8 13c-7 0-13.3 4.2-16 10.7L56 54.5l12.2 23.4 24.2-34.5a22.8 22.8 0 0 0 9.6-13.2Z" fill="#294D3A"></path><path d="M51.8 77.9 60 90.5l8.2-12.6L60 62.2l-8.2 15.7Z" fill="#294D3A"></path><path d="M34.8 75.4a4.5 4.5 0 0 1 6.3-.9L60 88.7l18.9-14.2a4.5 4.5 0 0 1 5.4 7.2l-21.6 16.2a4.5 4.5 0 0 1-5.4 0L35.7 81.7a4.5 4.5 0 0 1-.9-6.3Z" fill="#91A98B"></path></svg><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Valora</span><span class="text-outline-variant font-body-sm text-body-sm mx-space-xs">/</span><h1 class="font-label-md text-label-md text-on-surface-variant font-medium">Despensa</h1></div><button aria-label="Perfil do usuário" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjgcHmhmo08MLh7U7-dlh_-souE9lF8rd0VzUeXuAKB0-q1YuA40S9xp1tLsJpIF2xhY4yNCrINLmGfeFCf3RgHuu2akqYGx9veEVbiIR744b8kVqq3M8O68x82Sf30NLx8RkAARNlyJKXvvXbV1O6DT4mK8iZd6EEuWQm9XhvBtu5odUFmOulwFVhQAfIzM3WvffcgNOjL_8S5VlY_uNYilZ55EhMZXVtinznVcySDEWysBjQFY0cvQ"/></button></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-lg flex items-center justify-between">
+<button aria-label="Voltar para Configurações" class="w-10 h-10 -ml-2 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<span class="font-headline-sm text-headline-sm text-primary">Indique e Ganhe</span>
+<div class="w-10 h-10"></div>
+</div>
+<div class="px-margin flex flex-col gap-space-xl">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low p-space-lg flex flex-col items-center text-center shadow-sm">
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-primary-fixed/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-lowest text-primary shadow-sm mb-space-md">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">1 amigo = +7 dias de Premium Grátis</span>
+</div>
+<div class="relative z-10 w-20 h-20 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-center mb-space-md">
+<div class="w-14 h-14 rounded-xl bg-secondary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[32px]">redeem</span>
+</div>
+</div>
+<h2 class="relative z-10 font-headline-md text-headline-md text-primary tracking-tight max-w-[280px]">
+        Compartilhe hábitos conscientes, ganhe semanas de Premium
+      </h2>
+<p class="relative z-10 font-body-sm text-body-sm text-on-surface-variant mt-space-sm max-w-[320px] leading-relaxed">
+        Para cada pessoa que entrar no Valora pelo seu convite, você ganha 7 dias de assinatura Premium totalmente grátis. E quem você convidar também começa com 1 semana extra de teste cortesia.
+      </p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">workspace_premium</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Suas Conquistas</span>
+</div>
+<span class="font-caption text-caption text-secondary font-medium bg-surface-container px-2 py-0.5 rounded-full">3 amigos ativos</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Total acumulado</span>
+<span class="font-headline-md text-headline-md text-primary font-bold mt-0.5">+21 dias</span>
+<span class="font-caption text-caption text-secondary mt-1">Ativo até 28 Nov</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant">Próximo marco</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1 Mês</span>
+<span class="font-caption text-caption text-on-surface-variant">(4 amigos)</span>
+</div>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden mt-2">
+<div class="bg-primary-container h-full rounded-full w-3/4"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary-container">lightbulb</span>
+<span class="font-caption text-caption">Falta apenas <strong>1 convite</strong> para completar seu primeiro mês sem custo!</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Seu código exclusivo</label>
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl px-space-md py-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" id="invite-code">VALORA-HELENA7</span>
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary text-label-sm font-label-sm font-semibold shadow-sm hover:bg-surface-container active:scale-95 transition-transform" id="copy-code-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copiar</span>
+</button>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Link direto de convite</label>
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl px-space-md py-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface truncate pr-space-sm" id="invite-link">valora.app/c/VALORA-HELENA7</span>
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary text-label-sm font-label-sm font-semibold shadow-sm hover:bg-surface-container active:scale-95 transition-transform shrink-0" id="copy-link-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>Copiar link</span>
+</button>
+</div>
+</div>
+<button class="w-full mt-space-xs h-12 bg-primary-container hover:bg-primary text-on-primary rounded-xl flex items-center justify-center gap-space-sm shadow-sm active:scale-98 transition-all" id="share-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span class="font-label-md text-label-md font-semibold">Compartilhar Convite</span>
+</button>
+<div class="hidden transition-opacity duration-200 text-center py-1.5 px-space-md rounded-lg bg-primary text-on-primary font-caption text-caption" id="toast-copied">
+        Copiado com sucesso para a área de transferência!
+      </div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary">Como funciona</h3>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0 font-label-md text-label-md font-bold">
+            1
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Compartilhe sua chave</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Envie seu link ou código exclusivo para pessoas próximas que buscam evitar desperdício.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0 font-label-md text-label-md font-bold">
+            2
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Instalação e cadastro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Seu amigo instala o Valora e ativa seu código promocional no primeiro acesso.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center shrink-0 font-label-md text-label-md font-bold">
+            3
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Semana liberada para os dois</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Instantaneamente, cada um recebe 7 dias com todos os recursos inteligentes e sem limites.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Amigos convidados</h3>
+<span class="font-caption text-caption text-on-surface-variant">3 registros</span>
+</div>
+<div class="flex flex-col divide-y divide-transparent gap-space-sm">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-label-md text-label-md font-semibold">
+              LR
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Lucas Rocha</span>
+<span class="font-caption text-caption text-on-surface-variant">Cadastrado há 2 dias</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            +7 dias
+          </span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-label-md text-label-md font-semibold">
+              MC
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mariana Costa</span>
+<span class="font-caption text-caption text-on-surface-variant">Cadastrado há 5 dias</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            +7 dias
+          </span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-label-md text-label-md font-semibold">
+              RA
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rodrigo Alves</span>
+<span class="font-caption text-caption text-on-surface-variant">Convite enviado</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-medium">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+            Pendente
+          </span>
+</div>
+</div>
+</div>
+<div class="px-space-sm pb-space-lg text-center flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[22px]">all_inclusive</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[280px]">
+        Sem limite de amigos. Acumule semanas e aproveite o Valora Premium sem pagar nada.
+      </p>
+</div>
+</div>
+<script>
+    (function() {
+      const toast = document.getElementById('toast-copied');
+      function showToast(text) {
+        if (!toast) return;
+        toast.textContent = text || 'Copiado para a área de transferência!';
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 2500);
+      }
+
+      const copyCodeBtn = document.getElementById('copy-code-btn');
+      if (copyCodeBtn) {
+        copyCodeBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText('VALORA-HELENA7').catch(() => {});
+          showToast('Código "VALORA-HELENA7" copiado!');
+        });
+      }
+
+      const copyLinkBtn = document.getElementById('copy-link-btn');
+      if (copyLinkBtn) {
+        copyLinkBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText('https://valora.app/c/VALORA-HELENA7').catch(() => {});
+          showToast('Link de convite copiado!');
+        });
+      }
+
+      const shareBtn = document.getElementById('share-btn');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', () => {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Convite Valora Premium',
+              text: 'Estou organizando minha despensa e reduzindo desperdício com o Valora. Use meu código VALORA-HELENA7 para ganhar 1 semana extra de Premium!',
+              url: 'https://valora.app/c/VALORA-HELENA7'
+            }).catch(() => {});
+          } else {
+            navigator.clipboard.writeText('https://valora.app/c/VALORA-HELENA7').catch(() => {});
+            showToast('Link pronto para envio!');
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_0_rgba(41,45,41,0.04)] pb-safe" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-caption text-caption">Início</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="despensa" href="#"><span class="material-symbols-outlined text-[22px]">kitchen</span><span class="font-caption text-caption">Despensa</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="validades" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span class="font-caption text-caption">Validades</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="meu-impacto" href="#"><span class="material-symbols-outlined text-[22px]">eco</span><span class="font-caption text-caption">Meu impacto</span></a></div></nav>
+</body></html>

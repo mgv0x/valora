@@ -1,0 +1,327 @@
+{
+  "@@locale": "en",
+  "appName": "Valora",
+  "tagline": "Waste less. Live better.",
+  "homeTitle": "Home",
+  "pantryTitle": "Pantry",
+  "expiryCenterTitle": "Expiry Center",
+  "impactTitle": "My Impact",
+  "settingsTitle": "Settings",
+  "greetingMorning": "Good morning",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "activeItemsCount": "{count, plural, =0{No active items} =1{1 active item} other{{count} active items}}",
+  "@activeItemsCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "needsAttentionCount": "{count, plural, =0{None needs attention} =1{1 item needs attention} other{{count} items need attention}}",
+  "@needsAttentionCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "expiringSoonCount": "{count, plural, =0{None expiring soon} =1{1 item expiring soon} other{{count} items expiring soon}}",
+  "@expiringSoonCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "priorityItems": "Priority Items",
+  "consumeFirstTitle": "Consume first",
+  "insightNoneUrgent": "No food needs urgent attention.",
+  "insightExpired": "{count, plural, =1{1 food is already expired. Prioritize these items to reduce waste.} other{{count} foods are already expired. Prioritize these items to reduce waste.}}",
+  "@insightExpired": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "insightExpiringToday": "{count, plural, =1{1 food expires today. Prioritize these items to reduce waste.} other{{count} foods expire today. Prioritize these items to reduce waste.}}",
+  "@insightExpiringToday": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "insightExpiringTomorrow": "{count, plural, =1{This food expires tomorrow.} other{These {count} foods expire tomorrow.}}",
+  "@insightExpiringTomorrow": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "insightGeneralPriority": "Prioritize these items to reduce waste.",
+  "priorityHigh": "High priority",
+  "priorityAttention": "Attention",
+  "priorityOnTrack": "On track",
+  "viewAll": "View all",
+  "addFood": "Add Food",
+  "editFood": "Edit Food",
+  "foodDetails": "Food Details",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "confirm": "Confirm",
+  "consume": "Consume",
+  "discard": "Discard",
+  "markConsumed": "Mark as Consumed",
+  "markDiscarded": "Mark as Discarded",
+  "all": "All",
+  "foodName": "Food Name",
+  "foodNameHint": "e.g., Organic Milk, Fresh Apples",
+  "foodNameRequired": "Please enter a food name",
+  "category": "Category",
+  "categoryRequired": "Please select a category",
+  "quantity": "Quantity",
+  "quantityRequired": "Please enter a quantity greater than 0",
+  "unit": "Unit",
+  "expiryDate": "Expiry Date",
+  "unknownExpiry": "Unknown expiry date",
+  "expiryDateRequired": "Please select an expiry date or mark as unknown",
+  "purchasePrice": "Purchase Price",
+  "purchasePriceOptional": "Purchase Price (optional)",
+  "purchasePriceInvalid": "Price cannot be negative",
+  "storageLocation": "Storage Location",
+  "storageLocationOptional": "Storage Location (optional)",
+  "purchaseDate": "Purchase Date",
+  "purchaseDateOptional": "Purchase Date (optional)",
+  "notes": "Notes",
+  "notesOptional": "Notes (optional)",
+  "notesHint": "Brand, specific shelf, batch, etc.",
+  "catFruits": "Fruits",
+  "catVegetables": "Vegetables",
+  "catDairy": "Dairy",
+  "catMeatFish": "Meat & Fish",
+  "catBakery": "Bakery",
+  "catPantryStaples": "Pantry Staples",
+  "catFrozen": "Frozen Foods",
+  "catDrinks": "Drinks",
+  "catOther": "Other",
+  "locRefrigerator": "Refrigerator",
+  "locFreezer": "Freezer",
+  "locPantry": "Pantry",
+  "locOther": "Other",
+  "unitPiece": "unit",
+  "unitGram": "g",
+  "unitKilogram": "kg",
+  "unitMilliliter": "ml",
+  "unitLiter": "L",
+  "unitPackage": "pack",
+  "statusExpired": "Expired",
+  "statusExpiringToday": "Expires today",
+  "statusExpiringSoon": "Expiring soon",
+  "statusFresh": "Fresh",
+  "statusUnknown": "Unknown",
+  "daysLeft": "{days, plural, =0{Expires today} =1{1 day left} other{{days} days left}}",
+  "@daysLeft": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "daysAgo": "{days, plural, =0{Expired today} =1{Expired yesterday} other{Expired {days} days ago}}",
+  "@daysAgo": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "searchPlaceholder": "Search food by name...",
+  "filterAll": "All",
+  "sortBy": "Sort by",
+  "sortExpirySoonest": "Expiry: Earliest first",
+  "sortExpiryLatest": "Expiry: Latest first",
+  "sortNameAZ": "Name: A to Z",
+  "sortNameZA": "Name: Z to A",
+  "emptyPantryTitle": "Your pantry is empty",
+  "emptyPantrySubtitle": "Start organizing what you have at home to avoid waste and make better meals.",
+  "emptySearchTitle": "No items match your search",
+  "emptySearchSubtitle": "Try searching for a different keyword or adjusting the filters.",
+  "emptyExpiryTitle": "Everything is on track!",
+  "emptyExpirySubtitle": "No foods are expired or expiring soon within your current threshold.",
+  "emptyImpactTitle": "No activity recorded yet",
+  "emptyImpactSubtitle": "As you consume or discard foods, Valora will build genuine insights here.",
+  "groupExpired": "Expired",
+  "groupExpiringToday": "Expiring Today",
+  "groupExpiringSoon": "Expiring Soon",
+  "groupLater": "Good for Later",
+  "groupUnknown": "Unknown Expiry",
+  "consumeDialogTitle": "Record Consumption",
+  "consumeDialogPrompt": "How much of this food did you consume?",
+  "discardDialogTitle": "Record Disposal",
+  "discardDialogPrompt": "How much of this food was discarded?",
+  "resetFilters": "Reset filters",
+  "quantityRemaining": "Available: {qty} {unit}",
+  "@quantityRemaining": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+  "quantityOriginal": "Original: {qty} {unit}",
+  "@quantityOriginal": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+  "quantityConsumed": "Consumed: {qty} {unit}",
+  "@quantityConsumed": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+  "quantityDiscarded": "Discarded: {qty} {unit}",
+  "@quantityDiscarded": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+  "deleteConfirmTitle": "Delete Food Item?",
+  "deleteConfirmContent": "Are you sure you want to delete \"{name}\"? Historical activity records will be preserved.",
+  "@deleteConfirmContent": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "actionSuccessSaved": "Food item saved successfully.",
+  "actionSuccessConsumed": "Recorded as consumed.",
+  "actionSuccessDiscarded": "Recorded as discarded.",
+  "actionSuccessDeleted": "Item removed from active pantry.",
+  "impactSummary": "Activity Summary",
+  "itemsConsumed": "Recorded items consumed",
+  "itemsDiscarded": "Recorded items discarded",
+  "valueConsumed": "Estimated value consumed",
+  "valueDiscarded": "Estimated value discarded",
+  "consumptionRate": "Consumption rate",
+  "impactDisclaimer": "Metrics are calculated directly from recorded activity. Valora never invents savings or carbon estimates.",
+  "impactHistoryTitle": "Recent Activity Log",
+  "settingsLanguage": "Language",
+  "settingsNotifications": "Notifications",
+  "settingsEnableNotifications": "Expiry Reminders",
+  "settingsNotificationDesc": "Get notified before food items reach their expiry date.",
+  "settingsNotificationThreshold": "Warning threshold",
+  "settingsNotificationThresholdDesc": "Alert me this many days in advance",
+  "daysUnit": "{count, plural, =1{1 day} other{{count} days}}",
+  "@daysUnit": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "settingsDataManagement": "Data Management",
+  "settingsExportData": "Export Data (JSON)",
+  "settingsExportSuccess": "Data exported successfully.",
+  "settingsImportData": "Import Data (JSON)",
+  "settingsImportSuccess": "Data imported successfully.",
+  "settingsImportInvalid": "Invalid JSON data file.",
+  "settingsClearData": "Clear All Data",
+  "settingsClearDataConfirm": "This action cannot be undone. All active pantry items and activity history will be deleted.",
+  "settingsClearDataSuccess": "All local data has been erased.",
+  "settingsAbout": "About Valora",
+  "settingsAboutDesc": "Valora is a clean, offline-first food inventory & expiry tracking application built for the Hack Club Cider challenge.",
+  "settingsPrivacy": "Privacy & Data Storage",
+  "settingsPrivacyDesc": "All your data stays 100% on this device. No trackers, no accounts, no cloud sync.",
+  "settingsLicense": "Open Source License",
+  "settingsLicenseDesc": "Released under the MIT License.",
+  "unsavedChangesTitle": "Discard changes?",
+  "unsavedChangesMessage": "You have unsaved changes. Are you sure you want to exit without saving?",
+  "expirySafetyDisclaimerTitle": "Expiry Notice & Food Safety",
+  "expirySafetyDisclaimerContent": "Expiry dates are guidelines for optimal preservation and quality. Always check appearance, aroma, and texture. Foods without an entered expiry date require manual inspection and are never assumed to be automatically safe or expired.",
+  "partial": "Partial",
+  "quantityExceedsRemaining": "Cannot exceed remaining quantity ({qty} {unit})",
+  "@quantityExceedsRemaining": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" }
+    }
+  },
+  "discardConfirmPermanent": "Confirm Discard",
+  "discardConfirmPermanentPrompt": "Are you sure you want to discard {qty} {unit} of \"{name}\"? This action records food waste and cannot be undone.",
+  "@discardConfirmPermanentPrompt": {
+    "placeholders": {
+      "qty": { "type": "String" },
+      "unit": { "type": "String" },
+      "name": { "type": "String" }
+    }
+  },
+  "consumeNotesHint": "e.g., Prepared dinner, lunchbox",
+  "discardNotesHint": "e.g., Spoiled, past date",
+  "homeNeedsAction": "Needs Action",
+  "homeAddFoodDesc": "Keep track of new purchases to prevent waste",
+  "activityDetailsTitle": "Activity Details",
+  "activityDate": "Date & Time",
+  "activityType": "Action Type",
+  "activityEstimatedValue": "Estimated Value",
+  "activityValueFormulaNotice": "Calculated proportionally from entered purchase price.",
+  "filterPeriod": "Period",
+  "filterPeriodAll": "All time",
+  "filterPeriod7Days": "Last 7 days",
+  "filterPeriod30Days": "Last 30 days",
+  "filterType": "Type",
+  "filterTypeAll": "All actions",
+  "filterTypeConsumed": "Consumed only",
+  "filterTypeDiscarded": "Discarded only",
+  "unitBreakdownTitle": "Recorded Volume by Unit",
+  "consumedUnits": "Consumed",
+  "discardedUnits": "Discarded",
+  "fromPricedItems": "From items with purchase prices",
+  "settingsPreferences": "Preferences",
+  "settingsTheme": "Theme",
+  "themeSystem": "Follow System",
+  "themeLight": "Light Mode",
+  "themeDark": "Dark Mode",
+  "themeSystemOption": "System",
+  "themeLightOption": "Light",
+  "themeDarkOption": "Dark",
+  "copyToClipboard": "Copy to Clipboard",
+  "dataCopiedToClipboard": "Data copied to clipboard!",
+  "exportFailed": "Export failed: {error}",
+  "@exportFailed": {
+    "placeholders": {
+      "error": { "type": "String" }
+    }
+  },
+  "importPastePrompt": "Paste your exported Valora JSON backup below:",
+  "notificationPermissionDenied": "Notification permission was not granted by device settings.",
+  "appVersionDetails": "Version 1.0.0 • Hack Club Cider Submission",
+  "selectLanguage": "Select Language / Escolha o Idioma",
+  "langPortuguese": "Português (Brasil)",
+  "langEnglish": "English",
+  "langSpanish": "Español",
+  "langFrench": "Français",
+  "langGerman": "Deutsch",
+  "langItalian": "Italiano",
+  "langChinese": "中文 (简体)",
+  "langJapanese": "日本語",
+  "langRussian": "Русский",
+  "langArabic": "العربية",
+  "langHindi": "हिन्दी",
+  "langSystem": "System Default / Padrão do Sistema",
+  "subscriptionTitle": "Subscription & Referrals",
+  "subscriptionMonthlyPrice": "$9.90 / month",
+  "subscriptionFreeTrial": "7 Days Free Trial",
+  "subscriptionTrialActive": "Free Trial Period",
+  "subscriptionTrialDaysRemaining": "{days, plural, =0{Last day of free trial} =1{1 day remaining in trial} other{{days} days remaining in trial}}",
+  "@subscriptionTrialDaysRemaining": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "subscriptionExpired": "Trial Period Expired",
+  "subscriptionExpiredDesc": "To continue using Valora on Android, subscribe for $9.90/month or invite friends to get free days.",
+  "subscriptionActive": "Subscription Active",
+  "subscribeButton": "Subscribe for $9.90 / month",
+  "referralTitle": "Refer & Earn (+7 Days)",
+  "referralDesc": "For every person you invite, you get +7 extra days of free access!",
+  "referralYourCode": "Your Referral Code",
+  "referralEnterCode": "Enter Referral Code",
+  "referralEnterCodePrompt": "Enter a friend's referral code to get +7 extra days:",
+  "referralApply": "Apply Code",
+  "referralSuccess": "Congratulations! You earned +7 extra days of free access!",
+  "referralAlreadyUsed": "You have already redeemed this referral code.",
+  "referralSelfCode": "You cannot use your own referral code.",
+  "referralInvalidCode": "Invalid referral code.",
+  "referralSimulateInvite": "Simulate Friend Invited (+7 days)",
+  "referralShareText": "Share Invite",
+  "referralInvitedCount": "Friends invited",
+  "referralBonusDaysCount": "Bonus days earned"
+}

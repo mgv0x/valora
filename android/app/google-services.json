@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "5225185520",
+    "project_id": "valora-d66c9",
+    "storage_bucket": "valora-d66c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5225185520:android:f1ca523c58a789b8860235",
+        "android_client_info": {
+          "package_name": "dev.hackclub.valora.valora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCViZHHSzCfhPUELin5CXDHnEsFY5aRb0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

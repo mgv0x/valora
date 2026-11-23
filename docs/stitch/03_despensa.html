@@ -1,0 +1,506 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><title>Valora</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#113625", "on-tertiary": "#ffffff", "surface-dim": "#d8dbd5", "on-secondary-fixed-variant": "#374c34", "on-primary": "#ffffff", "on-primary-fixed-variant": "#2a4e3b", "inverse-surface": "#2d312d", "surface-container": "#ecefe8", "tertiary-container": "#424927", "tertiary": "#2c3212", "inverse-on-surface": "#eff2eb", "surface-container-lowest": "#ffffff", "surface": "#f7faf4", "on-secondary-fixed": "#0c200b", "surface-variant": "#e0e3dd", "outline": "#727973", "on-surface-variant": "#414843", "on-surface": "#191d19", "primary-container": "#294d3a", "surface-container-low": "#f2f5ee", "error": "#ba1a1a", "error-container": "#ffdad6", "on-primary-container": "#96bda5", "inverse-primary": "#a8d0b7", "primary-fixed-dim": "#a8d0b7", "on-error-container": "#93000a", "on-primary-fixed": "#002112", "on-secondary": "#ffffff", "secondary-fixed-dim": "#b5cdae", "tertiary-fixed-dim": "#c3cb9e", "on-tertiary-container": "#b0b88c", "on-error": "#ffffff", "on-secondary-container": "#546a50", "primary-fixed": "#c3ecd2", "on-tertiary-fixed": "#181e02", "on-background": "#191d19", "background": "#f7faf4", "outline-variant": "#c1c8c1", "surface-container-high": "#e6e9e3", "on-tertiary-fixed-variant": "#434a28", "secondary": "#4e644a", "surface-bright": "#f7faf4", "secondary-fixed": "#d0eac9", "tertiary-fixed": "#dfe7b8", "surface-container-highest": "#e0e3dd", "surface-tint": "#426652", "secondary-container": "#d0eac9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "display-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["0.6875rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-md": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.4375rem", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-lg": ["1.0625rem", { "lineHeight": "1.625rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><svg class="w-6 h-6 shrink-0" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 30.2C18 20.7 25.7 13 35.2 13c7 0 13.3 4.2 16 10.7L64 54.5 51.8 77.9 27.6 43.4A22.8 22.8 0 0 1 18 30.2Z" fill="#91A98B"></path><path d="M102 30.2C102 20.7 94.3 13 84.8 13c-7 0-13.3 4.2-16 10.7L56 54.5l12.2 23.4 24.2-34.5a22.8 22.8 0 0 0 9.6-13.2Z" fill="#294D3A"></path><path d="M51.8 77.9 60 90.5l8.2-12.6L60 62.2l-8.2 15.7Z" fill="#294D3A"></path><path d="M34.8 75.4a4.5 4.5 0 0 1 6.3-.9L60 88.7l18.9-14.2a4.5 4.5 0 0 1 5.4 7.2l-21.6 16.2a4.5 4.5 0 0 1-5.4 0L35.7 81.7a4.5 4.5 0 0 1-.9-6.3Z" fill="#91A98B"></path></svg><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Valora</span><span class="text-outline-variant font-body-sm text-body-sm mx-space-xs">/</span><h1 class="font-label-md text-label-md text-on-surface-variant font-medium">Despensa</h1></div><button aria-label="Perfil do usuário" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjgcHmhmo08MLh7U7-dlh_-souE9lF8rd0VzUeXuAKB0-q1YuA40S9xp1tLsJpIF2xhY4yNCrINLmGfeFCf3RgHuu2akqYGx9veEVbiIR744b8kVqq3M8O68x82Sf30NLx8RkAARNlyJKXvvXbV1O6DT4mK8iZd6EEuWQm9XhvBtu5odUFmOulwFVhQAfIzM3WvffcgNOjL_8S5VlY_uNYilZ55EhMZXVtinznVcySDEWysBjQFY0cvQ"></button></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Cabeçalho de página -->
+<div class="px-margin pt-4 pb-3 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Minha Despensa</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+          28 alimentos organizados em 4 locais
+        </p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high/60 px-2.5 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-caption text-caption text-primary font-semibold">Zero Desperdício</span>
+</div>
+</div>
+</div>
+<!-- Campo de Busca Minimalista e Filtro Rápido -->
+<div class="px-margin py-2">
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 flex items-center bg-surface-container-lowest rounded-xl shadow-sm px-3.5 h-12 transition-all focus-within:ring-2 focus-within:ring-primary/20">
+<span class="material-symbols-outlined text-outline text-[20px] select-none">search</span>
+<input class="flex-1 bg-transparent border-0 outline-none px-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline/80" id="search-input" placeholder="Buscar alimento ou categoria..." type="text">
+<button aria-label="Limpar busca" class="w-6 h-6 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors hidden" id="clear-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<button aria-label="Opções de filtros" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-lowest text-on-surface-variant shadow-sm hover:text-primary hover:bg-surface-container transition-all active:scale-95" id="toggle-filter-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Chips de Filtros Deslizáveis (Categorias) -->
+<div class="w-full overflow-x-auto py-2.5 px-margin flex items-center gap-2 no-scrollbar scroll-smooth">
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-sm" data-category="all" type="button">
+      Todos (28)
+    </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="hortifruti" type="button">
+      Hortifrúti (8)
+    </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="laticinios" type="button">
+      Laticínios (5)
+    </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="graos" type="button">
+      Grãos &amp; Secos (9)
+    </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="proteinas" type="button">
+      Proteínas (4)
+    </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="bebidas" type="button">
+      Bebidas (2)
+    </button>
+</div>
+<!-- Barra de Ordenação Contextual & Resumo -->
+<div class="px-margin pt-2 pb-3 flex items-center justify-between">
+<button class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant/90 hover:text-primary transition-colors bg-surface-container-low px-2.5 py-1.5 rounded-lg active:scale-95" id="sort-trigger" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">sort</span>
+<span class="font-medium">Ordenar por: <strong class="text-on-surface font-semibold">Validade (mais próximos)</strong></span>
+<span class="material-symbols-outlined text-[16px] ml-0.5">expand_more</span>
+</button>
+<div class="flex items-center gap-1 text-on-surface-variant font-caption text-caption">
+<span class="w-2 h-2 rounded-full bg-error-container"></span>
+<span class="">2 requerem consumo</span>
+</div>
+</div>
+<!-- Lista de Alimentos -->
+<div class="px-margin flex flex-col gap-3" id="pantry-items-list">
+<!-- Item 1: Morangos Orgânicos -->
+<article class="pantry-card group relative bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="hortifruti" data-name="morangos organicos" onclick="openFoodDetail('Morangos Orgânicos', 'Hortifrúti', 'Geladeira', '1 caixa (250g)', '14 Out', 'attention')">
+<div class="flex items-start gap-3.5">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up of fresh organic ripe red strawberries in an earthy ceramic bowl with green calyx intact on a rustic kitchen wood surface, soft ambient natural lighting, tactile organic still life photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrt2UOowBFrSCFYDjz_pcoOQF22egO1jKev1KMK5M2cozUIphxXK7uGEtzdaEkFSj5DyoxPBBYA6XhyWYhkKXcjE67Q-NBKRZtocn0qBn_5_pzJzdEEnX1iei1bveGv4DfuBcgCYM3_przdsQ0WhjQxWMfKMoBYwWZNCD2t2AY3UV1jmC_56PZl824wZWiTNlVc5NkT5DPlgk55VSAVdEzo2GoLghymq1zQBYagVeHqbwVZIy_p-rPBA">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-md p-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">kitchen</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-snug">Morangos Orgânicos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="">Hortifrúti</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant/80">Geladeira</span>
+<span class="text-outline-variant">•</span>
+<span class="">1 caixa (250g)</span>
+</p>
+</div>
+<!-- Badge Suave Âmbar -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FDF4E5] text-[#8C5B14] font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-[#8C5B14] animate-pulse"></span>
+              Atenção
+            </span>
+</div>
+<div class="mt-2.5 pt-2 border-t-0 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5 text-[#8C5B14] font-medium">
+<span class="material-symbols-outlined text-[15px]">event_upcoming</span>
+<span class="">Validade: <strong>14 Out</strong> (em 3 dias)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 2: Queijo Minas Padrão -->
+<article class="pantry-card group relative bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="laticinios" data-name="queijo minas padrao" onclick="openFoodDetail('Queijo Minas Padrão', 'Laticínios', 'Geladeira', '350g', '18 Out', 'ok')">
+<div class="flex items-start gap-3.5">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Artisanal white Minas cheese wedge placed on an olive wood cutting board with delicate textile linen napkin nearby, calm morning Scandinavian aesthetic, soft natural daylight and organic warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNX-R9NC4M3cKuzWmPt374n9YyV7LvBKLZylXxJdp_ELFCYsEcWbm8p7rYE2PbB6rfSZ4Nm2wKAfWQk8exk6ALr3A85a95b6raTwj0m8uUy0nuNnUrWMYkxk8FzYYBxjp0uOkKXT92FHHVibWnc0pAWhTKLQJOZLBJUXuKRPRhoqZ-0lB0Au-tYrStars1W_k8OjoOa6aoOofCqoQAw9QKfMgzsFVs2ZAT_4a_b8gqghocyvq5Nk_t_w">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-md p-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">kitchen</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-snug">Queijo Minas Padrão</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="">Laticínios</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant/80">Geladeira</span>
+<span class="text-outline-variant">•</span>
+<span class="">350g</span>
+</p>
+</div>
+<!-- Badge Verde Em Dia -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/60 text-primary font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Em dia
+            </span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]">event_available</span>
+<span class="">Validade: <strong>18 Out</strong> (em 7 dias)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 3: Arroz Integral Agulhinha -->
+<article class="pantry-card group relative bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="graos" data-name="arroz integral agulhinha" onclick="openFoodDetail('Arroz Integral Agulhinha', 'Grãos &amp; Secos', 'Armário Despensa', '1 kg', '12 Jan 2026', 'ok')">
+<div class="flex items-start gap-3.5">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Raw whole grain brown rice in a clear minimalist glass jar sealed with natural cork lid on a warm stone kitchen shelf, quiet luxury pantry organization, earthy neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0TkgXpgOzn1EaeUhvjz8HydfCfpQ3cJjzJeyT79LW82nH41NcKvLYayucWcH0j4UjgUOHwRA7q-wZ44YcxVF9S1I8Y12XZERjUIBrTAb9RxNT56GQN9sJ7qqLq6Ok5DkQBfQrnUVRv-Ps7qkuWMuaV5B9NQKr_HmlG-D93tgbaUByDe09aSzXaDeenoEHBES7M9msrlssADI7W9CN28UQZx3e-h4vMK6_DQ92owkOjVriLjQFM7TuUA">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-md p-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">shelves</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-snug">Arroz Integral Agulhinha</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="">Grãos &amp; Secos</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant/80">Armário</span>
+<span class="text-outline-variant">•</span>
+<span class="">1 kg</span>
+</p>
+</div>
+<!-- Badge Verde Em Dia -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/60 text-primary font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Em dia
+            </span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]">event_available</span>
+<span class="">Validade: <strong>12 Jan 2026</strong></span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 4: Ovos Caipiras -->
+<article class="pantry-card group relative bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="proteinas" data-name="ovos caipiras" onclick="openFoodDetail('Ovos Caipiras', 'Proteínas', 'Geladeira', '1 dúzia (12 un)', '22 Out', 'ok')">
+<div class="flex items-start gap-3.5">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dozen brown organic pasture-raised chicken eggs nestled inside a recycled beige pressed-pulp carton with soft linen backdrop, gentle studio shadows and authentic farm-to-table mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACnuyPPgbmSvnwlZ45lpnCLabMc7-KMSXs69qtnlfS8nuPQUVP3ImqlSupwK8P5zHfS8ZmgKch6uGg3uMcl4YXxqusk07bisqfGNmEHglSuvnCmAtwV34U1sYgkSnaXx2jIWkJqfSXDUJe8gDbMCcXG702fLVFUU0Vea2PRtLcgJr-dN7CIsj0khbeM3cdExwTQgr7haAM3K5Kkh3k1qYazZLmUU4rxv0KezYfJdCc0iawNR1zhblBJg">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-md p-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">kitchen</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-snug">Ovos Caipiras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="">Proteínas</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant/80">Geladeira</span>
+<span class="text-outline-variant">•</span>
+<span class="">1 dúzia (12 un)</span>
+</p>
+</div>
+<!-- Badge Verde Em Dia -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/60 text-primary font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Em dia
+            </span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]">event_available</span>
+<span class="">Validade: <strong>22 Out</strong> (em 11 dias)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 5: Espinafre Fresco -->
+<article class="pantry-card group relative bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="hortifruti" data-name="espinafre fresco" onclick="openFoodDetail('Espinafre Fresco', 'Hortifrúti', 'Gaveta de Legumes', '1 maço', '15 Out', 'attention')">
+<div class="flex items-start gap-3.5">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Crisp bundle of organic deep green fresh spinach leaves tied with natural jute twine, water droplets glistening under warm morning ambient kitchen light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6w-1uptleAd2JkICJM4LOc4sj78LMvW9A7XKojAVQTaLwACDBiiT-54wlNKaxCvzdn_1ctHo_k1nQckDI8nf7R8iKRpyuOb8Cel3cmOgXBf9fggKZG6dMl4Vh2RG1knHLwCBB4p3X86LYSFiVNwLp22lk4-EizndAM79nIL_VFgwCYNNvXILUmuysJj2k9TSNTpwh8_zRIRHcYPjOWX6NjeFAk26iEznXfV-UE0s7ESwYu9g_1k5C6g">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-md p-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">kitchen</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-snug">Espinafre Fresco</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="">Hortifrúti</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant/80">Geladeira</span>
+<span class="text-outline-variant">•</span>
+<span class="">1 maço</span>
+</p>
+</div>
+<!-- Badge Suave Âmbar -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FDF4E5] text-[#8C5B14] font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-[#8C5B14] animate-pulse"></span>
+              Atenção
+            </span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5 text-[#8C5B14] font-medium">
+<span class="material-symbols-outlined text-[15px]">event_upcoming</span>
+<span class="">Validade: <strong>15 Out</strong> (em 4 dias)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 6: Granola Artesanal -->
+<article class="pantry-card group relative bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-category="graos" data-name="granola artesanal" onclick="openFoodDetail('Granola Artesanal', 'Grãos &amp; Secos', 'Armário Despensa', '500g', '05 Dez', 'ok')">
+<div class="flex items-start gap-3.5">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Golden toasted homemade granola with rolled oats, pumpkin seeds and dried cranberries displayed in a ceramic bowl with wooden spoon, comforting warm hygge aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR0xupnjiZ_2X2O6Agimh4Tc8xipFDaZmFwp9pUnxSszwgAQaJLg7H654vnTKCjFzl5NHxZR0GBy_BYqQ1ulf-06C74Rymudwz2OIuqyQ3HnS4ZZPvruZWsc17_63eGQ_QKG52Vk-rP67d6d0bN9x0V9AxHEks5s013mJANkQy34sszBfnwTJ7hupqI7EKijkAMbVK7G4Dmsq8YIbuPQhc2faUb6Wfr9E_n8UP0K-EuUB1_3OiPAI6lA">
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-md p-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">shelves</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-snug">Granola Artesanal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="">Grãos &amp; Secos</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant/80">Armário</span>
+<span class="text-outline-variant">•</span>
+<span class="">500g</span>
+</p>
+</div>
+<!-- Badge Verde Em Dia -->
+<span class="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/60 text-primary font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Em dia
+            </span>
+</div>
+<div class="mt-2.5 pt-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]">event_available</span>
+<span class="">Validade: <strong>05 Dez</strong></span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline-variant group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Estado Vazio Amigável (oculto por padrão) -->
+<div class="hidden px-margin py-12 flex flex-col items-center text-center" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[32px]">inventory_2</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Nenhum alimento encontrado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px] mt-1">
+      Tente buscar por outro termo ou ajuste os filtros da sua despensa.
+    </p>
+<button class="mt-4 px-4 py-2 rounded-xl bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold" onclick="resetFilters()" type="button">
+      Restaurar busca
+    </button>
+</div>
+<!-- Micro-dica de Gestão Consciente de Alimentos -->
+<div class="mx-margin mt-5 mb-16 p-4 rounded-2xl bg-surface-container-low flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Dica de Conservação</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+        Guarde os morangos na prateleira intermediária sem lavá-los previamente para durarem até 3 dias a mais.
+      </p>
+</div>
+</div>
+<!-- Botão Flutuante de Atalho Rápido "Novo alimento (+)" -->
+<div class="fixed bottom-20 right-margin z-40">
+<button aria-label="Adicionar novo alimento" class="group flex items-center gap-2 pl-4 pr-5 h-13 py-3 rounded-full bg-primary text-on-primary shadow-lg shadow-primary/20 hover:bg-primary-container active:scale-95 transition-all duration-200" id="btn-add-food" onclick="triggerAddFoodModal()" type="button">
+<span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-90 transition-transform duration-300">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide">Novo alimento</span>
+</button>
+</div>
+<!-- Bottom Sheet / Modal de Detalhes do Alimento (Interativo) -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs flex items-end justify-center hidden opacity-0 transition-opacity duration-200" id="food-modal" onclick="closeFoodDetail(event)">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-3xl p-6 shadow-2xl transform translate-y-full transition-transform duration-300" onclick="event.stopPropagation()">
+<div class="w-12 h-1 bg-surface-variant rounded-full mx-auto mb-4"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption text-caption uppercase tracking-wider text-secondary font-semibold" id="modal-category">Categoria</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-0.5" id="modal-title">Nome do Alimento</h3>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors" onclick="hideFoodDetail()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-3 mt-5">
+<div class="bg-surface-container-low p-3.5 rounded-2xl">
+<span class="font-caption text-caption text-on-surface-variant">Local</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5" id="modal-location">Geladeira</p>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-2xl">
+<span class="font-caption text-caption text-on-surface-variant">Porção / Peso</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5" id="modal-quantity">1 un</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-2xl mt-3 flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant">Data de validade estimada</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5" id="modal-expiry">14 Out</p>
+</div>
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold" id="modal-badge">Status</span>
+</div>
+<div class="flex items-center gap-3 mt-6">
+<button class="flex-1 h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 active:scale-98 transition-all" onclick="markAsConsumed()" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+          Consumir agora
+        </button>
+<button class="h-12 px-4 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" onclick="hideFoodDetail()" type="button">
+          Editar
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast de Ação de Sucesso -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300" id="toast-feedback">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check</span>
+<span class="font-label-sm text-label-sm" id="toast-message">Ação registrada com sucesso!</span>
+</div>
+</div>
+<script>
+  // Interatividade da Busca, Filtros e Modais
+  const searchInput = document.getElementById('search-input');
+  const clearBtn = document.getElementById('clear-btn');
+  const filterChips = document.querySelectorAll('.filter-chip');
+  const cards = document.querySelectorAll('.pantry-card');
+  const emptyState = document.getElementById('empty-state');
+  const toast = document.getElementById('toast-feedback');
+  const toastMsg = document.getElementById('toast-message');
+
+  let activeCategory = 'all';
+
+  function filterItems() {
+    const term = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      const cardName = card.getAttribute('data-name');
+
+      const matchesCat = (activeCategory === 'all' || cardCategory === activeCategory);
+      const matchesSearch = (!term || cardName.includes(term));
+
+      if (matchesCat && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+    } else {
+      emptyState.classList.add('hidden');
+    }
+  }
+
+  // Eventos de Busca
+  searchInput.addEventListener('input', (e) => {
+    if (e.target.value.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+    filterItems();
+  });
+
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearBtn.classList.add('hidden');
+    searchInput.focus();
+    filterItems();
+  });
+
+  // Filtros de Categoria em Chips
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach(c => {
+        c.className = "filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container text-on-surface-variant hover:bg-surface-container-high";
+      });
+      chip.className = "filter-chip shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-sm";
+      activeCategory = chip.getAttribute('data-category');
+      filterItems();
+    });
+  });
+
+  function resetFilters() {
+    searchInput.value = '';
+    clearBtn.classList.add('hidden');
+    const firstChip = document.querySelector('[data-category="all"]');
+    if (firstChip) firstChip.click();
+  }
+
+  // Modal de Detalhes
+  const modal = document.getElementById('food-modal');
+  const modalSheet = modal.querySelector('div');
+
+  function openFoodDetail(title, category, location, quantity, expiry, status) {
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-category').innerText = category;
+    document.getElementById('modal-location').innerText = location;
+    document.getElementById('modal-quantity').innerText = quantity;
+    document.getElementById('modal-expiry').innerText = expiry;
+
+    const badgeEl = document.getElementById('modal-badge');
+    if (status === 'attention') {
+      badgeEl.className = "px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-[#FDF4E5] text-[#8C5B14]";
+      badgeEl.innerText = "Atenção (Consumo breve)";
+    } else {
+      badgeEl.className = "px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-container/60 text-primary";
+      badgeEl.innerText = "Em dia (Conservado)";
+    }
+
+    modal.classList.remove('hidden');
+    requestAnimationFrame(() => {
+      modal.classList.remove('opacity-0');
+      modalSheet.classList.remove('translate-y-full');
+    });
+  }
+
+  function hideFoodDetail() {
+    modalSheet.classList.add('translate-y-full');
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 250);
+  }
+
+  function closeFoodDetail(e) {
+    if (e.target === modal) hideFoodDetail();
+  }
+
+  function showToast(msg) {
+    toastMsg.innerText = msg;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('-translate-y-1');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none');
+      toast.classList.remove('-translate-y-1');
+    }, 2800);
+  }
+
+  function markAsConsumed() {
+    hideFoodDetail();
+    showToast("Alimento marcado como consumido. Parabéns!");
+  }
+
+  function triggerAddFoodModal() {
+    showToast("Abrindo câmera e leitor de código de barras...");
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_0_rgba(41,45,41,0.04)] pb-safe" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-caption text-caption">Início</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 transition-colors text-primary-container font-semibold" data-path="despensa" href="#"><span class="material-symbols-outlined text-[22px]">kitchen</span><span class="font-caption text-caption">Despensa</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="validades" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span class="font-caption text-caption">Validades</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors hover:text-primary" data-path="meu-impacto" href="#"><span class="material-symbols-outlined text-[22px]">eco</span><span class="font-caption text-caption">Meu impacto</span></a></div></nav>
+
+</body></html>
