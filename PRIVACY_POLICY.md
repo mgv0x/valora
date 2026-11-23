@@ -130,9 +130,9 @@ Podemos atualizar esta Política de Privacidade periodicamente para refletir evo
 
 Se você tiver dúvidas, sugestões, solicitações de exclusão de dados ou desejar exercer qualquer um dos seus direitos de titular previstos na LGPD, entre em contato conosco:
 
-- **E-mail de Suporte e Privacidade:** `privacidade@valora.app`
+- **E-mail de Suporte e Privacidade:** `marcussgollub@gmail.com`
 - **Responsável pelo Tratamento de Dados:** Equipe de Privacidade Valora
-- **Repositório do Projeto:** [github.com/valora/valora](https://github.com/valora/valora)
+- **Repositório do Projeto:** [github.com/mgv0x/valora](https://github.com/mgv0x/valora)
 
 ---
 *Valora — Menos desperdício. Mais valor. Soberania total sobre seus dados.*

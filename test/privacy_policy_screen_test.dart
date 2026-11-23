@@ -99,7 +99,7 @@ void main() {
       // Portability Button & DPO Contact
       expect(find.text('Exercer Direito de Portabilidade'), findsOneWidget);
       expect(find.text('Visualizar e Exportar JSON'), findsOneWidget);
-      expect(find.text('privacidade@valora.app'), findsOneWidget);
+      expect(find.text('marcussgollub@gmail.com'), findsOneWidget);
     });
 
     testWidgets('Tapping Portability button displays JSON export dialog', (tester) async {

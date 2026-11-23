@@ -72,8 +72,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
   }
 
   void _copyContactEmail(BuildContext context) {
-    Clipboard.setData(const ClipboardData(text: 'privacidade@valora.app'));
-    UiFeedback.showSuccess(context, 'E-mail do DPO copiado: privacidade@valora.app');
+    Clipboard.setData(const ClipboardData(text: 'marcussgollub@gmail.com'));
+    UiFeedback.showSuccess(context, 'E-mail do DPO copiado: marcussgollub@gmail.com');
   }
 
   @override
@@ -409,7 +409,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                           const Icon(Icons.email_outlined, size: 16, color: AppColors.forestGreen),
                           const SizedBox(width: 8),
                           Text(
-                            'privacidade@valora.app',
+                            'marcussgollub@gmail.com',
                             style: GoogleFonts.inter(
                               fontSize: 13,
                               fontWeight: FontWeight.w600,
